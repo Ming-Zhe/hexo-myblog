@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Category: 所谓开发 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title">
+<meta name="og:url" content="http://yoursite.com/categories/所谓开发/">
+<meta name="og:image">
+<meta name="og:site_name" content="Hexo">
+<meta name="og:description">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-iterm2-configure-color" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/01/12/iterm2-configure-color/" class="article-date">
+  <time datetime="2014-01-12T14:31:12.000Z" itemprop="datePublished">Jan 12 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/01/12/iterm2-configure-color/">iTerm2 配色攻略</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>终于把 iTerm 的配色搞完了，之前因时间不够半途而废了。网上有几个 iTerm 的配色教程，跟着试了试，都不行。终于找到了解决方案。</p>
+<p><br/></p>
+<h2 id="-">预览</h2>
+<p><img src="http://farm6.staticflickr.com/5487/11906135643_b25552b7dc_b.jpg" alt=""></p>
+<p>这是我的配色结果，还有多种配色方案可供选择。</p>
+<p><br/></p>
+<h2 id="-">一步一步来</h2>
+<p>首先打开home目录下的 <code>.bash_profile</code> 文件</p>
+<pre><code>$ vim ~/.bash_profile
+</code></pre><p>粘贴进去一下内容：</p>
+<pre><code>CLICOLOR=1
+LSCOLORS=gxfxcxdxbxegedabagacad
+exportPS1=&#39;\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ &#39;
+</code></pre><p>保存退出后。</p>
+<p>接下来，打开 iterm 确认一下在 Preferences-&gt;Profiles-&gt;Terminal 标签下的 Terminal Emulation 选择的是 <code>xterm-new</code>，这个一定要确定（有可能需要重启 iTerm ），网上有的版本说的是 <code>xterm-256color</code>，亲测结果不对，一定要是 <code>xterm-new</code> 才可以。</p>
+<p>之后在 Preferences-&gt;Profiles-&gt;Colors 标签，点击 <code>Load Preset</code> 列表中的 <code>Import</code> 进行导入，然后选择一种即可。</p>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/01/12/iterm2-configure-color/" data-id="punx3vw03spgg3xm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iTerm/">iTerm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-koa" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/01/02/koa/" class="article-date">
+  <time datetime="2014-01-01T16:26:53.000Z" itemprop="datePublished">Jan 2 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/01/02/koa/">基于Node的下一代Web开发框架--koa</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>由 Express 原班人马打造的 koa，致力于成为一个更小、更健壮、更富有表现力的 Web 框架。使用 koa 编写 web 应用，通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升常用错误处理效率。Koa 不在内核方法中绑定任何中间件，它仅仅提供了一个轻量优雅的函数库，使得编写 Web 应用变得得心应手。</p>
+<p><br/></p>
+<h2 id="-koa">安装koa</h2>
+<p>koa 依赖支持 generator 的 Node 环境，也就是说，node的版本要在 <code>0.11.9</code> 或者更高，否则将无法执行。</p>
+<p>用npm：</p>
+<pre><code>$ npm install koa
+</code></pre><p>或者，选择安装在全局：</p>
+<pre><code>$ npm install -g koa
+</code></pre><p><br/></p>
+<h2 id="example">Example</h2>
+<p>这是一个koa的简单例子：</p>
+<pre><code>var koa = require(&#39;koa&#39;);
+var app = koa();
+
+// logger
+
+app.use(function *(next){
+  var start = new Date;
+  yield next;
+  var ms = new Date - start;
+  console.log(&#39;%s %s - %s&#39;, this.method, this.url, ms);
+});
+
+// response
+
+app.use(function *(){
+  this.body = &#39;Hello World&#39;;
+});
+
+app.listen(3000);
+</code></pre><p>与普通的 function 不同，generator functions 以 function* 声明。以这种关键词声明的函数支持 <code>yield</code>。在后面会讲到 <code>yield</code> 的用法和意义。</p>
+<p><br/></p>
+<h2 id="-koa">执行koa</h2>
+<p>执行koa时需要在 <code>—-harmony</code> 模式下运行，为了方便可以将 <code>node</code> 设置为默认启动 <code>harmony</code> 模式的别名：</p>
+<pre><code>alias node=&#39;node --harmony&#39;
+</code></pre><p>这样在执行相关js的时候就可以直接使用了。</p>
+<p><br/></p>
+<h2 id="cascading">Cascading</h2>
+<p>这是一个比较抽象的概念。Koa 中间件以一种非常传统的方式级联起来，也就是这里所谓的Cascading。</p>
+<p>在以往的 Node 开发中，频繁使用回调不太便于展示复杂的代码逻辑，在 Koa 中，我们可以写出真正具有表现力的中间件。与 Connect 实现中间件的方法相对比，Koa 的做法不是简单的将控制权依次移交给一个又一个的中间件直到程序结束，Koa 执行代码的方式有点像回形针，用户请求通过中间件，遇到 <code>yield next</code> 关键字时，会被传递到下一个符合请求的路由（downstream），在 <code>yield next</code> 捕获不到下一个中间件时，逆序返回继续执行代码（upstream）。</p>
+<p>下边这个例子展现了使用这一特殊方法书写的 Hello World 范例：一开始，用户的请求通过 x-response-time 中间件和 logging 中间件，这两个中间件记录了一些请求细节，然后「穿过」 response 中间件一次，最终结束请求，返回 「Hello World」。</p>
+<p>当程序运行到 <code>yield next</code> 时，代码流会暂停执行这个中间件的剩余代码，转而切换到下一个被定义的中间件执行代码，这样切换控制权的方式，被称为 downstream，当没有下一个中间件执行 downstream 的时候，代码将会逆序执行。</p>
+<pre><code>var koa = require(&#39;koa&#39;);
+var app = koa();
+
+// x-response-time
+app.use(function *(next){
+  // (1) 进入路由
+  var start = new Date;
+  yield next;
+  // (5) 再次进入 x-response-time 中间件，记录2次通过此中间件「穿越」的时间
+  var ms = new Date - start;
+  this.set(&#39;X-Response-Time&#39;, ms + &#39;ms&#39;);
+  // (6) 返回 this.body
+});
+
+// logger
+app.use(function *(next){
+  // (2) 进入 logger 中间件
+  var start = new Date;
+  yield next;
+  // (4) 再次进入 logger 中间件，记录2次通过此中间件「穿越」的时间
+  var ms = new Date - start;
+  console.log(&#39;%s %s - %s&#39;, this.method, this.url, ms);
+});
+
+// response
+app.use(function *(){
+  // (3) 进入 response 中间件，没有捕获到下一个符合条件的中间件，传递到 upstream
+  this.body = &#39;Hello World&#39;;
+});
+
+app.listen(3000);
+</code></pre><p>在上方的范例代码中，中间件以此被执行的顺序已经在注释中标记出来。你也可以自己尝试运行一下这个范例，并打印记录下各个环节的输出与耗时。</p>
+<pre><code>.middleware1 {
+  // (1) do some stuff
+  .middleware2 {
+    // (2) do some other stuff
+    .middleware3 {
+      // (3) NO next yield !
+      // this.body = &#39;hello world&#39;
+    }
+    // (4) do some other stuff later
+  }
+  // (5) do some stuff lastest and return
+}
+</code></pre><p>上方的伪代码中标注了中间件的执行顺序，看起来是不是有点像 ruby 执行代码块（block）时 yield 的表现了？也许这能帮助你更好的理解 koa 运作的方式。</p>
+<p><br/></p>
+<h2 id="-middleware-">中间件（Middleware）</h2>
+<p>实际上，这些只是初步理解了koa基础，koa有很多第三方开发的中间件，这些中间件的熟练运用才是关键，github有很多这方面的库，每个都有详细的例子解释。以下是常用的一些：</p>
+<ul>
+<li><a href="https://github.com/alexmingoia/koa-router" target="_blank">koa-router</a></li>
+<li><a href="https://github.com/koajs/trie-router" target="_blank">trie-router</a></li>
+<li><a href="https://github.com/koajs/route" target="_blank">route</a></li>
+<li><a href="https://github.com/koajs/basic-auth" target="_blank">basic-auth</a></li>
+<li><a href="https://github.com/koajs/etag" target="_blank">etag</a></li>
+<li><a href="https://github.com/koajs/compose" target="_blank">compose</a></li>
+<li><a href="https://github.com/koajs/static" target="_blank">static</a></li>
+<li><a href="https://github.com/koajs/static-cache" target="_blank">static-cache</a></li>
+<li><a href="https://github.com/koajs/session" target="_blank">session</a></li>
+<li><a href="https://github.com/koajs/compress" target="_blank">compress</a></li>
+<li><a href="https://github.com/koajs/csrf" target="_blank">csrf</a></li>
+<li><a href="https://github.com/koajs/logger" target="_blank">logger</a></li>
+<li><a href="https://github.com/koajs/mount" target="_blank">mount</a></li>
+<li><a href="https://github.com/koajs/send" target="_blank">send</a></li>
+<li><a href="https://github.com/koajs/error" target="_blank">error</a></li>
+</ul>
+<p><br/></p>
+<h2 id="-">小结</h2>
+<p>这些天确实做了写有关koa的工作，集合开源的力量做了一个 <a href="http://koajs.cn/" target="_blank"><code>中文文档</code></a> 有更详细的API说明。</p>
+<p>在这里要感谢 <a href="http://yimity.com/" target="_blank"><code>一米</code></a> 对网站建设的大力贡献，还要感谢 <a href="https://github.com/turingou" target="_blank"><code>郭宇</code></a> 对翻译工作的大力贡献，此中文文档遵循MIT协议，转载著名出处即可。</p>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/01/02/koa/" data-id="5xw1rk2quawbgx3c" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koa/">koa</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node.js/">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-first-journey-in-webgl-02" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/12/09/first-journey-in-webgl-02/" class="article-date">
+  <time datetime="2013-12-09T02:56:39.000Z" itemprop="datePublished">Dec 9 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/12/09/first-journey-in-webgl-02/">First Journey In WebGL（二）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>承接上次讲述，这次我们要实现一个功能。在程序中引入一个obj文件，在页面中以三维形式展现出来。并且，实现互动式的三维旋转，即随着鼠标的移动，图像在三维立体空间里进行相应的动作。</p>
+<p><br/></p>
+<h3 id="-js-">引入相关js文件</h3>
+<pre><code>&lt;body&gt;
+     &lt;script src=&quot;Three.js&quot;&gt;&lt;/script&gt;
+     &lt;script src=&quot;OBJLoader.js&quot;&gt;&lt;/script&gt;
+     &lt;script src=&quot;Detector.js&quot;&gt;&lt;/script&gt;
+     &lt;script src=&quot;RequestAnimationFrame.js&quot;&gt;&lt;/script&gt;//最大可能的兼容老版本浏览器
+     &lt;script&gt;
+     // your code here
+     &lt;/script&gt;
+&lt;/body&gt;
+</code></pre><p>所有的js文件在源码中都能找到，在OBJLoader.js在examples/js/loaders/中。</p>
+<p><br/></p>
+<h3 id="objloader-js">OBJLoader.js</h3>
+<p>这个是我们主要用的一个js模块，它实现了我们所要的引入obj文件的功能。</p>
+<pre><code>var loader = new THREE.OBJLoader();
+      loader.load( &quot;1.obj&quot;, function ( object ) {
+      object.position.y = -30;
+      scene.add( object );
+      } );
+</code></pre><p>代码浅显易懂，基本没什么好说的。</p>
+<p><br/></p>
+<h3 id="-">设定环境光和直接光源</h3>
+<pre><code>var ambient = new THREE.AmbientLight( 0x101030 );
+scene.add( ambient );
+
+var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+directionalLight.position.set( 0, 0, 1 ).normalize();
+scene.add( directionalLight );
+</code></pre><p>three.js提供了多种环境光和光源可供选择。从官网或者github下载原文件后，里面的doc有全部的解释，其实玩javascript是一个体力活，相信你也发现了。</p>
+<p><br/></p>
+<h3 id="-">设置动画效果</h3>
+<pre><code>function animate() {
+
+    requestAnimationFrame( animate );
+    render();
+
+    }
+
+function render() {
+
+    camera.position.x += ( mouseX - camera.position.x ) * .05;
+    camera.position.y += ( - mouseY - camera.position.y ) * .05;
+    camera.lookAt( scene.position );
+    renderer.render( scene, camera );
+
+    }
+</code></pre><p>requestAnimationFrame()的主要作用是，当此时页面所在浏览器的tap或者window不可见时，就停止渲染，这样更加节省系统资源和电量。在render()中，有两个全局变量mouseX和mouseY，需要添加监听器进行监听，随时改变camera的位置，从而实现动态图像的动态显示。下面来添加监听器。</p>
+<p><br/></p>
+<h3 id="-">添加监听器</h3>
+<pre><code>document.addEventListener( &#39;mousemove&#39;, onDocumentMouseMove, false );
+window.addEventListener( &#39;resize&#39;, onWindowResize, false );
+</code></pre><p>相应的响应函数如下：</p>
+<pre><code>function onWindowResize() {
+
+      windowHalfX = window.innerWidth / 2;
+      windowHalfY = window.innerHeight / 2;
+
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+
+      renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+
+function onDocumentMouseMove( event ) {
+
+      mouseX = ( event.clientX - windowHalfX ) / 2;
+      mouseY = ( event.clientY - windowHalfY ) / 2;
+
+}
+</code></pre><p>这里还添加了另外一个监听器，是用来相应窗口变化，这也是为了适应多种显示器比例不同，以及在浏览过程中窗口大小变化，物体总是呈现在窗口的正中间。</p>
+<p><br/></p>
+<h3 id="-">最后，全部代码</h3>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;title&gt;three.js webgl - loaders - OBJ loader&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+        &lt;style&gt;
+            body {
+                font-family: Monospace;
+                background-color: #000;
+                color: #fff;
+                margin: 0px;
+                overflow: hidden;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script src=&quot;Three.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;OBJLoader.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;Detector.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;RequestAnimationFrame.js&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;
+            var container;
+            var camera, scene, renderer;
+            var mouseX = 0, mouseY = 0;
+            var windowHalfX = window.innerWidth / 2;
+            var windowHalfY = window.innerHeight / 2;
+
+            init();
+            animate();
+
+            function init() {
+                container = document.createElement( &#39;div&#39; );
+                document.body.appendChild( container );
+                scene = new THREE.Scene();
+                camera = new THREE.PerspectiveCamera( 65, window.innerWidth / window.innerHeight, 1, 2000 );
+                camera.position.z = 100;
+                scene.add( camera );
+                var ambient = new THREE.AmbientLight( 0x101030 );
+                scene.add( ambient );
+                var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+                directionalLight.position.set( 0, 0, 1 ).normalize();
+                scene.add( directionalLight );
+                var loader = new THREE.OBJLoader();
+                loader.load( &quot;1.obj&quot;, function ( object ) {
+                    object.position.y = -30;
+                    scene.add( object );
+                } );
+
+                // RENDERER
+                renderer = new THREE.WebGLRenderer();
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                container.appendChild( renderer.domElement );
+
+                document.addEventListener( &#39;mousemove&#39;, onDocumentMouseMove, false );
+                window.addEventListener( &#39;resize&#39;, onWindowResize, false );
+            }
+
+            function onWindowResize() {
+                windowHalfX = window.innerWidth / 2;
+                windowHalfY = window.innerHeight / 2;
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize( window.innerWidth, window.innerHeight );
+            }
+
+            function onDocumentMouseMove( event ) {
+                mouseX = ( event.clientX - windowHalfX ) / 2;
+                mouseY = ( event.clientY - windowHalfY ) / 2;
+            }
+
+            function animate() {
+                requestAnimationFrame( animate );
+                render();
+            }
+
+            function render() {
+                camera.position.x += ( mouseX - camera.position.x ) * .05;
+                camera.position.y += ( - mouseY - camera.position.y ) * .05;
+                camera.lookAt( scene.position );
+                renderer.render( scene, camera );
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><br/></p>
+<h2 id="-">注意</h2>
+<p>如果只写一个html文件并把所有的js文件引入进来，依然是无法在浏览器中显示的，这是许多浏览器为了安全性考虑，对于本地的html显示有所限制，具体原因还没有深究，有两种解决方案，一种是改变浏览器的配置，另一种是搭建一个本地服务器(推荐)，这是用python搭建的方法。</p>
+<pre><code>$ python -m SimpleHTTPServer 8080
+</code></pre><p>用node.js：</p>
+<pre><code>(sudo) npm install http-server -g
+</code></pre><p>然后在任意目录下</p>
+<pre><code>http-server [-p] [端口号]
+</code></pre><p>然后访问localhost:8080，会进入到到自己搭建的本地服务器，就可以实现obj的引入了。</p>
+<p><br/></p>
+<h3 id="-">小结</h3>
+<p>WebGL还是内容还是相当丰富的，javascript更是如此，再多的教程也都只能作为抛砖引玉，真正的老师是谷歌，还有一个强大的资料库github，善用这两个资源，再到几个社区活跃一下，学技术很简单了。。。</p>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2013/12/09/first-journey-in-webgl-02/" data-id="e6iuf2z7tpovkvjs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebGL/">WebGL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/three.js/">three.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-first-journey-in-webgl" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/12/06/first-journey-in-webgl/" class="article-date">
+  <time datetime="2013-12-06T13:49:53.000Z" itemprop="datePublished">Dec 6 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/12/06/first-journey-in-webgl/">First Journey In WebGL（一）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>由于一门课程的需要，要做一个三维可视化的presentation，想来想去，也就WebGL我还有点感兴趣，于是开始对这一领域的研究。这两天的时间也算是小有收获吧。在报告中我就是打算带着大家一起从零写一个WebGL程序的，让所有人也都感受一下这么一个创作的过程，再分享一下学习的经验。不过可能时间不够，就在这写吧。</p>
+<p><br/></p>
+<h2 id="three-js">three.js</h2>
+<p>要说玩WebGL怎么可能不说three.js，这可是对WebGL的完美封装。<a href="http://threejs.org/" target="_blank">源码</a>和<a href="https://github.com/mrdoob/three.js/" target="_blank">官网</a>，要学three.js这两个地方是必去之处。我简单说一下three.js起步。</p>
+<p><br/></p>
+<h3 id="-">在进行开发之前</h3>
+<p>由于我们最终的结果是要呈现在web端，所有在在前端的展示框架要先搭建好，同时还要事先下载three.js文件，或者就像我这里一样，用three.js的官方cdn。</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My first Three.js app&lt;/title&gt;
+        &lt;style&gt;canvas { width: 100%; height: 100% }&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script src=&quot;https://rawgithub.com/mrdoob/three.js/master/build/three.js&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;
+            // Our Javascript will go here.
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><br/></p>
+<h3 id="-scene-">创建场景(scene)</h3>
+<p>用three.js呈现的内容需要3样元算：scene, camera, renderer    . </p>
+<pre><code>var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+</code></pre><p>解释一下，这里的camera，我们使用的是PerspectiveCamera(three.js还提供了很多其他类型的camera以供选择)，它有4个参数，第一个表示视野大小；第二个表示成像比例，一般都是按照浏览器窗口比例来进行设定；第三和第四个分别是最远和最近的camera作用范围。下面的renderer比较容易理解，需要注意的是在最后要append到document中。</p>
+<p>下面创建一个物体出来。</p>
+<pre><code>var geometry = new THREE.CubeGeometry(1,1,1);
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.z = 5;
+</code></pre><p>这里CubeGeometry为了创建一个cube出来，由geometry变量存储。除此之外还有需要material给我们的cube着色(同样的three.js由很多material可供选择)。然后就是mesh了，这个过程可以抽象的理解为融合过程，有了geometry和material融合后就是我们需要的最终object了。最后把物体add进之前声明好的scene中去。
+<br/></p>
+<h3 id="-render-">渲染(render)</h3>
+<pre><code>function render() {
+    requestAnimationFrame(render);
+    renderer.render(scene, camera);
+}
+render();
+</code></pre><p>如果要深入解释render的原理，这就是另外一本书的内容了。。。这里，浏览器接到指令后，大概会做的事情就是每秒对要显示的内容进行60次着色。
+<br/></p>
+<h3 id="-">制作动画效果</h3>
+<p>如果渲染出的图像不会动，可能也看不出三维效果来。因为我们用的只是一个生成的简单cube，本身是没有办法呈现出立体感的。所以我们加点动态以展示出，我们做的确实一个三维的object。</p>
+<pre><code>cube.rotation.x += 0.1;
+cube.rotation.y += 0.1;
+</code></pre><p><br/></p>
+<h3 id="-">最终代码展示</h3>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My first Three.js app&lt;/title&gt;
+        &lt;style&gt;canvas { width: 100%; height: 100% }&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script src=&quot;three.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            var geometry = new THREE.CubeGeometry(1,1,1);
+            var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
+            var cube = new THREE.Mesh(geometry, material);
+            scene.add(cube);
+
+            camera.position.z = 5;
+
+            var render = function () {
+                requestAnimationFrame(render);
+
+                cube.rotation.x += 0.1;
+                cube.rotation.y += 0.1;
+
+                renderer.render(scene, camera);
+            };
+
+            render();
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><br/>
+这次先写这么多，下次介绍怎么再一个WebGL程序中load一个外部obj模型。哈哈，给力的实例来了。。。</p>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2013/12/06/first-journey-in-webgl/" data-id="rvytyzjrs2myogwl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebGL/">WebGL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/three.js/">three.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-high-time-function" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/11/28/high-time-function/" class="article-date">
+  <time datetime="2013-11-28T08:36:26.000Z" itemprop="datePublished">Nov 28 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/11/28/high-time-function/">High Time Function</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>请注意我主页右上角的HighTime功能，昨天在看小伙伴的博客的时候发现的，现在全盘供出源码。</p>
+<pre><code>&lt;li&gt; &lt;a title=&quot;HighTime&quot; href=&#39;javascript:(function() {
+function c() {
+    var e = document.createElement(&quot;link&quot;);
+    e.setAttribute(&quot;type&quot;, &quot;text/css&quot;);
+    e.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);
+    e.setAttribute(&quot;href&quot;, f);
+    e.setAttribute(&quot;class&quot;, l);
+    document.body.appendChild(e)
+}
+
+function h() {
+    var e = document.getElementsByClassName(l);
+    for (var t = 0; t &lt; e.length; t++) {
+        document.body.removeChild(e[t])
+    }
+}
+
+function p() {
+    var e = document.createElement(&quot;div&quot;);
+    e.setAttribute(&quot;class&quot;, a);
+    document.body.appendChild(e);
+    setTimeout(function() {
+        document.body.removeChild(e)
+    }, 100)
+}
+
+function d(e) {
+    return {
+        height : e.offsetHeight,
+        width : e.offsetWidth
+    }
+}
+
+function v(i) {
+    var s = d(i);
+    return s.height &gt; e &amp;&amp; s.height &lt; n &amp;&amp; s.width &gt; t &amp;&amp; s.width &lt; r
+}
+
+function m(e) {
+    var t = e;
+    var n = 0;
+    while (!!t) {
+        n += t.offsetTop;
+        t = t.offsetParent
+    }
+    return n
+}
+
+function g() {
+    var e = document.documentElement;
+    if (!!window.innerWidth) {
+        return window.innerHeight
+    } else if (e &amp;&amp; !isNaN(e.clientHeight)) {
+        return e.clientHeight
+    }
+    return 0
+}
+
+function y() {
+    if (window.pageYOffset) {
+        return window.pageYOffset
+    }
+    return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+}
+
+function E(e) {
+    var t = m(e);
+    return t &gt;= w &amp;&amp; t &lt;= b + w
+}
+
+function S() {
+    var e = document.createElement(&quot;audio&quot;);
+    e.setAttribute(&quot;class&quot;, l);
+    e.src = i;
+    e.loop = false;
+    e.addEventListener(&quot;canplay&quot;, function() {
+        setTimeout(function() {
+            x(k)
+        }, 500);
+        setTimeout(function() {
+            N();
+            p();
+            for (var e = 0; e &lt; O.length; e++) {
+                T(O[e])
+            }
+        }, 15500)
+    }, true);
+    e.addEventListener(&quot;ended&quot;, function() {
+        N();
+        h()
+    }, true);
+    e.innerHTML = &quot; &lt;p&gt;If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.&lt;/p&gt; &lt;p&gt;&quot;;
+    document.body.appendChild(e);
+    e.play()
+}
+
+function x(e) {
+    e.className += &quot; &quot; + s + &quot; &quot; + o
+}
+
+function T(e) {
+    e.className += &quot; &quot; + s + &quot; &quot; + u[Math.floor(Math.random() * u.length)]
+}
+
+function N() {
+    var e = document.getElementsByClassName(s);
+    var t = new RegExp(&quot;\\b&quot; + s + &quot;\\b&quot;);
+    for (var n = 0; n &lt; e.length; ) {
+        e[n].className = e[n].className.replace(t, &quot;&quot;)
+    }
+}
+
+var e = 30;
+var t = 30;
+var n = 350;
+var r = 350;
+var i = &quot;//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3&quot;;
+var s = &quot;mw-harlem_shake_me&quot;;
+var o = &quot;im_first&quot;;
+var u = [&quot;im_drunk&quot;, &quot;im_baked&quot;, &quot;im_trippin&quot;, &quot;im_blown&quot;];
+var a = &quot;mw-strobe_light&quot;;
+var f = &quot;//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css&quot;;
+var l = &quot;mw_added_css&quot;;
+var b = g();
+var w = y();
+var C = document.getElementsByTagName(&quot;*&quot;);
+var k = null;
+for (var L = 0; L &lt; C.length; L++) {
+    var A = C[L];
+    if (v(A)) {
+        if (E(A)) {
+            k = A;
+            break
+        }
+    }
+}
+if (A === null) {
+    console.warn(&quot;Could not find a node of the right size. Please try a different page.&quot;);
+    return
+}
+c();
+S();
+var O = [];
+for (var L = 0; L &lt; C.length; L++) {
+    var A = C[L];
+    if (v(A)) {
+        O.push(A)
+    }
+}
+})()    &#39;&gt;High一下&lt;/a&gt; &lt;/li&gt;
+</code></pre><p>使用方法很简单，插进相应的HTML标签中即可。懂得JavaScript的朋友还可以另存到一个JS文件再引进来试试，我这里就仅供参考了。</p>
+<blockquote>
+<p>P.S. 代码从<a href="http://zipperary.com/2013/11/19/give-it-a-high/" target="_blank">这里</a>来。再推荐下moxie的博客。</p>
+</blockquote>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2013/11/28/high-time-function/" data-id="c0o9djb3unc0n1zl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-try-git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/11/28/try-git/" class="article-date">
+  <time datetime="2013-11-28T08:11:00.000Z" itemprop="datePublished">Nov 28 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/11/28/try-git/">Try Git</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>I&#39;m an egotistical bastard, and I name all my projects after myself. First Linux, now git.</p>
+</blockquote>
+<p><a href="http://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9" target="_blank">林纳斯·托瓦兹</a>自嘲地取了这个名字&quot;git&quot;。在英式英语中指一个愚笨或者不开心的人。</p>
+<h2 id="git">Git</h2>
+<p>说到版本控制、软件项目管理等概念，在开源时代到来的今天，Git绝对是一个绕不开的软件。更多有关Git的官方解释，我也不赘述了。</p>
+<ul>
+<li><a href="http://zh.wikipedia.org/wiki/Git" target="_blank">Git维基百科</a></li>
+<li><a href="http://gitref.cyj.me/zh/" target="_blank">Git参考手册</a></li>
+<li><a href="https://github.com/git/git" target="_blank">Git源码</a></li>
+<li><a href="http://youngsterxyf.github.io/2013/09/28/learning-git-internals-by-example/" target="_blank">Git内部构造</a></li>
+</ul>
+<h2 id="try-git">Try Git</h2>
+<p>重点来了
+我们不是技术大牛，不可能上来就熟练使用git全部操作。我接触git不到1个月，用的也只是它的基本粗浅功能（在我的<a href="http://github.com/Ming-Zhe" target="_blank">Github</a>就能体现出来）。不一定有什么指导意义，还是想分享一下整个Try Git的过程。</p>
+<h3 id="-">初吻</h3>
+<p>惊艳的第一次来自于Github的<a href="http://training.github.com/" target="_blank">Training</a>，在小伙伴的怂恿下开始了git之旅。</p>
+<h3 id="-git-github">用git管理Github</h3>
+<p>如果上一阶段是初吻，那这里就是XXX，应该说是比初吻要更强烈的快感。用git命令行来控制自己项目的各种操作，看上去就有种瞬间变身技术大牛的感觉（有点自欺欺人）。
+这里第一步比较麻烦一些，生成SSH Keys，建立与操作电脑的链接。详细参见来自Github的<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">帮助</a>
+之后就是从Training学来的东西，反复的操作。
+如果没有记牢的话，除了可以跟着Training再来一遍，<a href="https://www.codeschool.com/courses/try-git" target="_blank">Code School</a>里也有相应的免费教程。</p>
+<h2 id="use-git">Use Git</h2>
+<p>现在，我们可以用Git进行最基本的项目操作，保证你的Github每天都有动态。这个时候和你打交道的基本就是就是一下几条语句：</p>
+<ul>
+<li>git add .    添加所有修改文件到缓存</li>
+<li>git commit -m &quot;xxx&quot;    记录缓存内容的快照</li>
+<li>git push origin master    推送你的master分支与数据到某个远端仓库的master分支</li>
+<li>git pull    从远端仓库提取数据并尝试合并到当前分支</li>
+</ul>
+<h2 id="-">总结</h2>
+<p>耐下性子，按照步骤，一步一步来，很快就能熟练掌握git。说到底也没有多少东西。</p>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2013/11/28/try-git/" data-id="scc9r0sve7cafem0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/所谓开发/">所谓开发</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/所谓开发/">所谓开发</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/茗哲/">茗哲</a><span class="category-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flickr/">Flickr</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GDG/">GDG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPS/">VPS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebGL/">WebGL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/">book</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gnuplot/">gnuplot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTerm/">iTerm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/koa/">koa</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/look backward/">look backward</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mini/">mini</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node.js/">node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/three.js/">three.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爱技术/">爱技术</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爱生活/">爱生活</a><span class="tag-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Android/" style="font-size: 10.00px;">Android</a><a href="/tags/Flickr/" style="font-size: 10.00px;">Flickr</a><a href="/tags/GDG/" style="font-size: 10.00px;">GDG</a><a href="/tags/Git/" style="font-size: 10.00px;">Git</a><a href="/tags/JS/" style="font-size: 10.00px;">JS</a><a href="/tags/VPS/" style="font-size: 12.50px;">VPS</a><a href="/tags/WebGL/" style="font-size: 12.50px;">WebGL</a><a href="/tags/book/" style="font-size: 10.00px;">book</a><a href="/tags/gnuplot/" style="font-size: 10.00px;">gnuplot</a><a href="/tags/iTerm/" style="font-size: 10.00px;">iTerm</a><a href="/tags/koa/" style="font-size: 12.50px;">koa</a><a href="/tags/linux/" style="font-size: 10.00px;">linux</a><a href="/tags/look backward/" style="font-size: 10.00px;">look backward</a><a href="/tags/mini/" style="font-size: 10.00px;">mini</a><a href="/tags/nginx/" style="font-size: 10.00px;">nginx</a><a href="/tags/node.js/" style="font-size: 12.50px;">node.js</a><a href="/tags/python/" style="font-size: 10.00px;">python</a><a href="/tags/three.js/" style="font-size: 12.50px;">three.js</a><a href="/tags/博客/" style="font-size: 20.00px;">博客</a><a href="/tags/爱技术/" style="font-size: 17.50px;">爱技术</a><a href="/tags/爱生活/" style="font-size: 15.00px;">爱生活</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">January 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12">December 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11">November 2013</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/01/30/look-backward/">Look Backward</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/12/iterm2-configure-color/">iTerm2 配色攻略</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/05/backward01/">茗记（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/02/koa/">基于Node的下一代Web开发框架--koa</a>
+          </li>
+        
+          <li>
+            <a href="/2013/12/10/这几天/">这几天</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 John Doe<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript" src="/js/script.js"></script>
+  </div>
+</body>
+</html>

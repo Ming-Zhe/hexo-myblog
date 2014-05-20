@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>High Time Function | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="og:type" content="blog">
+<meta name="og:title" content="High Time Function">
+<meta name="og:url" content="http://yoursite.com/2013/11/28/high-time-function/">
+<meta name="og:image">
+<meta name="og:site_name" content="Hexo">
+<meta name="og:description" content="这是一个比较有意思的JavaScript功能，很方便添加到你的博客中，快进来看看源码。">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-high-time-function" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/11/28/high-time-function/" class="article-date">
+  <time datetime="2013-11-28T08:36:26.000Z" itemprop="datePublished">Nov 28 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/所谓开发/">所谓开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      High Time Function
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>请注意我主页右上角的HighTime功能，昨天在看小伙伴的博客的时候发现的，现在全盘供出源码。</p>
+<pre><code>&lt;li&gt; &lt;a title=&quot;HighTime&quot; href=&#39;javascript:(function() {
+function c() {
+    var e = document.createElement(&quot;link&quot;);
+    e.setAttribute(&quot;type&quot;, &quot;text/css&quot;);
+    e.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);
+    e.setAttribute(&quot;href&quot;, f);
+    e.setAttribute(&quot;class&quot;, l);
+    document.body.appendChild(e)
+}
+
+function h() {
+    var e = document.getElementsByClassName(l);
+    for (var t = 0; t &lt; e.length; t++) {
+        document.body.removeChild(e[t])
+    }
+}
+
+function p() {
+    var e = document.createElement(&quot;div&quot;);
+    e.setAttribute(&quot;class&quot;, a);
+    document.body.appendChild(e);
+    setTimeout(function() {
+        document.body.removeChild(e)
+    }, 100)
+}
+
+function d(e) {
+    return {
+        height : e.offsetHeight,
+        width : e.offsetWidth
+    }
+}
+
+function v(i) {
+    var s = d(i);
+    return s.height &gt; e &amp;&amp; s.height &lt; n &amp;&amp; s.width &gt; t &amp;&amp; s.width &lt; r
+}
+
+function m(e) {
+    var t = e;
+    var n = 0;
+    while (!!t) {
+        n += t.offsetTop;
+        t = t.offsetParent
+    }
+    return n
+}
+
+function g() {
+    var e = document.documentElement;
+    if (!!window.innerWidth) {
+        return window.innerHeight
+    } else if (e &amp;&amp; !isNaN(e.clientHeight)) {
+        return e.clientHeight
+    }
+    return 0
+}
+
+function y() {
+    if (window.pageYOffset) {
+        return window.pageYOffset
+    }
+    return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+}
+
+function E(e) {
+    var t = m(e);
+    return t &gt;= w &amp;&amp; t &lt;= b + w
+}
+
+function S() {
+    var e = document.createElement(&quot;audio&quot;);
+    e.setAttribute(&quot;class&quot;, l);
+    e.src = i;
+    e.loop = false;
+    e.addEventListener(&quot;canplay&quot;, function() {
+        setTimeout(function() {
+            x(k)
+        }, 500);
+        setTimeout(function() {
+            N();
+            p();
+            for (var e = 0; e &lt; O.length; e++) {
+                T(O[e])
+            }
+        }, 15500)
+    }, true);
+    e.addEventListener(&quot;ended&quot;, function() {
+        N();
+        h()
+    }, true);
+    e.innerHTML = &quot; &lt;p&gt;If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.&lt;/p&gt; &lt;p&gt;&quot;;
+    document.body.appendChild(e);
+    e.play()
+}
+
+function x(e) {
+    e.className += &quot; &quot; + s + &quot; &quot; + o
+}
+
+function T(e) {
+    e.className += &quot; &quot; + s + &quot; &quot; + u[Math.floor(Math.random() * u.length)]
+}
+
+function N() {
+    var e = document.getElementsByClassName(s);
+    var t = new RegExp(&quot;\\b&quot; + s + &quot;\\b&quot;);
+    for (var n = 0; n &lt; e.length; ) {
+        e[n].className = e[n].className.replace(t, &quot;&quot;)
+    }
+}
+
+var e = 30;
+var t = 30;
+var n = 350;
+var r = 350;
+var i = &quot;//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3&quot;;
+var s = &quot;mw-harlem_shake_me&quot;;
+var o = &quot;im_first&quot;;
+var u = [&quot;im_drunk&quot;, &quot;im_baked&quot;, &quot;im_trippin&quot;, &quot;im_blown&quot;];
+var a = &quot;mw-strobe_light&quot;;
+var f = &quot;//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css&quot;;
+var l = &quot;mw_added_css&quot;;
+var b = g();
+var w = y();
+var C = document.getElementsByTagName(&quot;*&quot;);
+var k = null;
+for (var L = 0; L &lt; C.length; L++) {
+    var A = C[L];
+    if (v(A)) {
+        if (E(A)) {
+            k = A;
+            break
+        }
+    }
+}
+if (A === null) {
+    console.warn(&quot;Could not find a node of the right size. Please try a different page.&quot;);
+    return
+}
+c();
+S();
+var O = [];
+for (var L = 0; L &lt; C.length; L++) {
+    var A = C[L];
+    if (v(A)) {
+        O.push(A)
+    }
+}
+})()    &#39;&gt;High一下&lt;/a&gt; &lt;/li&gt;
+</code></pre><p>使用方法很简单，插进相应的HTML标签中即可。懂得JavaScript的朋友还可以另存到一个JS文件再引进来试试，我这里就仅供参考了。</p>
+<blockquote>
+<p>P.S. 代码从<a href="http://zipperary.com/2013/11/19/give-it-a-high/" target="_blank">这里</a>来。再推荐下moxie的博客。</p>
+</blockquote>
+<p><br/></p>
+<hr>
+<p><br/></p>
+<p>爱生活，爱技术。
+愿结识各路小伙伴。
+找到我：</p>
+<p>微博：<a href="http://weibo.com/afmz" target="_blank">http://weibo.com/afmz</a></p>
+<p>Github：<a href="http://github.com/Ming-Zhe" target="_blank">http://github.com/Ming-Zhe</a></p>
+<p>E-mail：law.gravitys@gmail.com </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2013/11/28/high-time-function/" data-id="c0o9djb3unc0n1zl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/爱技术/">爱技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/11/28/set-up-nginx-on-vps/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Set Up Nginx On Vps
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/11/28/try-git/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Try Git</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/所谓开发/">所谓开发</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/所谓开发/">所谓开发</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/茗哲/">茗哲</a><span class="category-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flickr/">Flickr</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GDG/">GDG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/">JS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VPS/">VPS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebGL/">WebGL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/">book</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gnuplot/">gnuplot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iTerm/">iTerm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/koa/">koa</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/look backward/">look backward</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mini/">mini</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node.js/">node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/three.js/">three.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爱技术/">爱技术</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/爱生活/">爱生活</a><span class="tag-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Android/" style="font-size: 10.00px;">Android</a><a href="/tags/Flickr/" style="font-size: 10.00px;">Flickr</a><a href="/tags/GDG/" style="font-size: 10.00px;">GDG</a><a href="/tags/Git/" style="font-size: 10.00px;">Git</a><a href="/tags/JS/" style="font-size: 10.00px;">JS</a><a href="/tags/VPS/" style="font-size: 12.50px;">VPS</a><a href="/tags/WebGL/" style="font-size: 12.50px;">WebGL</a><a href="/tags/book/" style="font-size: 10.00px;">book</a><a href="/tags/gnuplot/" style="font-size: 10.00px;">gnuplot</a><a href="/tags/iTerm/" style="font-size: 10.00px;">iTerm</a><a href="/tags/koa/" style="font-size: 12.50px;">koa</a><a href="/tags/linux/" style="font-size: 10.00px;">linux</a><a href="/tags/look backward/" style="font-size: 10.00px;">look backward</a><a href="/tags/mini/" style="font-size: 10.00px;">mini</a><a href="/tags/nginx/" style="font-size: 10.00px;">nginx</a><a href="/tags/node.js/" style="font-size: 12.50px;">node.js</a><a href="/tags/python/" style="font-size: 10.00px;">python</a><a href="/tags/three.js/" style="font-size: 12.50px;">three.js</a><a href="/tags/博客/" style="font-size: 20.00px;">博客</a><a href="/tags/爱技术/" style="font-size: 17.50px;">爱技术</a><a href="/tags/爱生活/" style="font-size: 15.00px;">爱生活</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">January 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12">December 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11">November 2013</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/01/30/look-backward/">Look Backward</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/12/iterm2-configure-color/">iTerm2 配色攻略</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/05/backward01/">茗记（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/02/koa/">基于Node的下一代Web开发框架--koa</a>
+          </li>
+        
+          <li>
+            <a href="/2013/12/10/这几天/">这几天</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 John Doe<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript" src="/js/script.js"></script>
+  </div>
+</body>
+</html>
