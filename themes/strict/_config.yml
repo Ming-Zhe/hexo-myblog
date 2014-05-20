@@ -1,0 +1,16 @@
+# head
+menu:
+  Home: /
+  Archives: /archives
+  About: http://about.ming-zhe.me
+rss: /atom.xml
+favicon: https://farm3.staticflickr.com/2906/14247661503_deedb0ac6a_t.jpg
+
+# main
+date_format: 'MMMM D, YYYY'
+excerpt_link: Read More
+comment_link: 0 COMMENTS
+
+# foot
+themes_mata:
+google_analytics: UA-45579943-3
