@@ -1,0 +1,109 @@
+date: 2014-05-20 13:50:17.875
+argv: node /opt/local/bin/hexo server
+os: Darwin 13.2.0 darwin x64
+version:
+  hexo: 2.4.5
+  http_parser: 1.0
+  node: 0.10.26
+  v8: 3.14.5.9
+  ares: 1.9.0-DEV
+  uv: 0.10.25
+  zlib: 1.2.3
+  modules: 11
+  openssl: 1.0.1e
+---
+
+[debug] 13:21:07.609 Configuration file load successfully
+[debug] 13:21:07.611 Version info checked successfully
+[debug] 13:21:07.642 Loading database.
+[debug] 13:21:07.943 Plugin loaded successfully: hexo-renderer-jade
+[debug] 13:21:07.964 Theme layout loaded
+[debug] 13:21:07.966 Theme configuration loaded
+[debug] 13:21:07.967 Processed: _drafts/high-time-function.md
+[debug] 13:21:07.975 Theme source loaded
+[debug] 13:21:08.321 Processed: _posts/backward01.md
+[debug] 13:21:08.321 Processed: _posts/first-journey-in-webgl-02.md
+[debug] 13:21:08.321 Processed: _posts/first-journey-in-webgl.md
+[debug] 13:21:08.321 Processed: _posts/hello-world.md
+[debug] 13:21:08.322 Processed: _posts/iterm2-configure-color.md
+[debug] 13:21:08.322 Processed: _posts/koa.md
+[debug] 13:21:08.322 Processed: _posts/look-backward.md
+[debug] 13:21:08.322 Processed: _posts/new-ipad-mini.md
+[debug] 13:21:08.322 Processed: _posts/set-up-nginx-on-vps.md
+[debug] 13:21:08.322 Processed: _posts/try-git.md
+[debug] 13:21:08.322 Processed: _posts/use-pic-form-your-flickr.md
+[debug] 13:21:08.322 Processed: _posts/这几天.md
+[debug] 13:21:08.322 Processed: _posts/再次造访gdg.md
+[debug] 13:21:08.325 Cache saved
+[info] 13:21:08.368 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
+[debug] 13:21:11.729 Render index: 
+[debug] 13:21:20.322 Render index: 
+[debug] 13:21:21.168 Render index: 
+[debug] 13:21:21.980 Render post: 2014/01/30/look-backward/
+[debug] 13:28:50.145 Render post: 2014/01/30/look-backward/
+[debug] 13:29:13.096 Render index: 
+[debug] 13:30:06.649 Render post: 2013/12/09/first-journey-in-webgl-02/
+[debug] 13:30:12.816 Render index: 
+[create] 13:43:59.320 Source: pinterest-bc7b3.html
+[create] 13:43:59.322 Source: _posts/high-time-function.md
+[debug] 13:43:59.474 Processed: pinterest-bc7b3.html
+[debug] 13:43:59.485 Processed: _posts/high-time-function.md
+[debug] 13:43:59.489 Cache saved
+[update] 13:43:59.566 Source: _posts/koa.md
+[update] 13:43:59.567 Source: _posts/try-git.md
+[update] 13:43:59.568 Source: _posts/first-journey-in-webgl.md
+[update] 13:43:59.568 Source: _posts/hello-world.md
+[update] 13:43:59.568 Source: _posts/use-pic-form-your-flickr.md
+[update] 13:43:59.568 Source: _posts/backward01.md
+[update] 13:43:59.569 Source: _posts/再次造访gdg.md
+[update] 13:43:59.569 Source: _posts/first-journey-in-webgl-02.md
+[update] 13:43:59.569 Source: _posts/iterm2-configure-color.md
+[update] 13:43:59.569 Source: _posts/这几天.md
+[update] 13:43:59.570 Source: _posts/look-backward.md
+[update] 13:43:59.570 Source: _posts/new-ipad-mini.md
+[update] 13:43:59.571 Source: _posts/set-up-nginx-on-vps.md
+[debug] 13:44:00.488 Processed: _posts/koa.md
+[debug] 13:44:00.495 Processed: _posts/try-git.md
+[debug] 13:44:00.495 Processed: _posts/first-journey-in-webgl.md
+[debug] 13:44:00.495 Processed: _posts/hello-world.md
+[debug] 13:44:00.495 Processed: _posts/use-pic-form-your-flickr.md
+[debug] 13:44:00.495 Processed: _posts/backward01.md
+[debug] 13:44:00.495 Processed: _posts/再次造访gdg.md
+[debug] 13:44:00.495 Processed: _posts/first-journey-in-webgl-02.md
+[debug] 13:44:00.495 Processed: _posts/iterm2-configure-color.md
+[debug] 13:44:00.495 Processed: _posts/这几天.md
+[debug] 13:44:00.495 Processed: _posts/look-backward.md
+[debug] 13:44:00.495 Processed: _posts/new-ipad-mini.md
+[debug] 13:44:00.495 Processed: _posts/set-up-nginx-on-vps.md
+[debug] 13:44:00.498 Cache saved
+[delete] 13:50:17.758 Theme: README.md
+[delete] 13:50:17.759 Theme: LICENSE
+[delete] 13:50:17.760 Theme: layout/archive.jade
+[delete] 13:50:17.760 Theme: layout/category.jade
+[delete] 13:50:17.761 Theme: layout/index.jade
+[delete] 13:50:17.761 Theme: layout/page.jade
+[delete] 13:50:17.761 Theme: layout/post.jade
+[delete] 13:50:17.761 Theme: layout/tag.jade
+[info] 13:50:17.761 unlinkDir Theme: %s layout
+[delete] 13:50:17.761 Theme: _config.yml
+[delete] 13:50:17.761 Theme: package.json
+[delete] 13:50:17.762 Theme: source/css/fonts/icon.svg
+[delete] 13:50:17.762 Theme: source/css/fonts/icon.ttf
+[delete] 13:50:17.762 Theme: source/css/fonts/icon.eot
+[delete] 13:50:17.762 Theme: source/css/fonts/icon.woff
+[info] 13:50:17.762 unlinkDir Theme: %s source/css/fonts
+[delete] 13:50:17.763 Theme: source/css/main.styl
+[info] 13:50:17.763 unlinkDir Theme: %s source/css
+[info] 13:50:17.763 unlinkDir Theme: %s source
+[error] 13:50:17.869 ReferenceError: route is not defined
+ReferenceError: route is not defined
+    at _watchSource (/opt/local/lib/node_modules/hexo/lib/core/theme.js:210:5)
+    at /opt/local/lib/node_modules/hexo/lib/core/theme.js:260:15
+    at /opt/local/lib/node_modules/hexo/node_modules/async/lib/async.js:108:13
+    at Array.forEach (native)
+    at _each (/opt/local/lib/node_modules/hexo/node_modules/async/lib/async.js:32:24)
+    at Object.async.each (/opt/local/lib/node_modules/hexo/node_modules/async/lib/async.js:107:9)
+    at async.series.generate.watch (/opt/local/lib/node_modules/hexo/lib/core/theme.js:249:17)
+    at /opt/local/lib/node_modules/hexo/node_modules/async/lib/async.js:548:21
+    at /opt/local/lib/node_modules/hexo/node_modules/async/lib/async.js:224:13
+    at iterate (/opt/local/lib/node_modules/hexo/node_modules/async/lib/async.js:131:13)
