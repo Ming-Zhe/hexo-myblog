@@ -79,7 +79,7 @@ disqus_shortname: MingZhe
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: pacman
+theme: strict
 exclude_generator:
 
 # Markdown
